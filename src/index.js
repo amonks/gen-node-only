@@ -1,4 +1,4 @@
-import { ask } from './ask'
+import { ask, replacer } from 'gen-util'
 import $ from 'shelljs'
 
 export default async () => {
@@ -10,12 +10,7 @@ export default async () => {
 
   const files = $.find(`${target}`)
 
-  const replace = (old, _new) =>
-    files.forEach(file => {
-      if (!$.test('-d', file)) {
-        $.sed('-i', old, _new, file)
-      }
-    })
+  const replace = replacer(files)
 
   replace(/\$PROJECT_NAME/, name)
   replace(/\$CURRENT_YEAR/, new Date().getFullYear())
