@@ -1,0 +1,34 @@
+{
+  "name": "@amonks/node-only",
+  "version": "0.0.0",
+  "author": "Andrew J. Monks <a@monks.co>",
+  "license": "ISC",
+  "bin": {
+    "gen-node-only": "lib/bin.js"
+  },
+  "files": [
+    "lib",
+    "files",
+    "files/src"
+  ],
+  "scripts": {
+    "install-globally": "npm install --global .",
+    "build": "babel src -d lib"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.22.0",
+    "inquirer": "^3.0.1",
+    "shelljs": "^0.7.6"
+  },
+  "keywords": [
+    "exploder"
+  ],
+  "repository": "git@github.com:amonks/node-only.git"
+}
