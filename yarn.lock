@@ -79,8 +79,8 @@ aws-sign2@~0.6.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
 
 aws4@^1.2.1:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.5.0.tgz#0a29ffb79c31c9e712eeb087e8e7a64b4a56d755"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
 babel-cli@^6.22.2:
   version "6.22.2"
@@ -1007,10 +1007,12 @@ gauge@~2.7.1:
     wide-align "^1.1.0"
 
 gen-util@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gen-util/-/gen-util-1.0.0.tgz#a69360d2056329eec5a6acd10dcd808a5f81a38d"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gen-util/-/gen-util-1.0.1.tgz#3ce6e8b0dac385d84c1bb7f0face457359c311d9"
   dependencies:
     babel-runtime "^6.22.0"
+    inquirer "^3.0.1"
+    shelljs "^0.7.6"
 
 generate-function@^2.0.0:
   version "2.0.0"
