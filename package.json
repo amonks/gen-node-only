@@ -1,7 +1,7 @@
 {
   "name": "@amonks/gen-node-only",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Andrew J. Monks <a@monks.co>",
   "license": "ISC",
   "bin": {
