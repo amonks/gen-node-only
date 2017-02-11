@@ -8,3 +8,13 @@ or delete the `__gen__` folder yourself and replace these strings:
 - `__AUTHOR_NAME`
 - `__CURRENT_YEAR`
 
+* * *
+
+## install
+
+## set up
+
+## use
+
+## develop
+
