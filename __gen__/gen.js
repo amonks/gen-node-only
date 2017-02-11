@@ -22,6 +22,9 @@ const main = async () => {
   console.log('remove git')
   await $.rm('-rf', '.git')
 
+  console.log('remove __gen__')
+  await $.rm('-rf', '__gen__')
+
   console.log('do repalcements')
   const files = $.find(__dirname)
   const replace = replacer(files)
