@@ -1,7 +1,7 @@
 {
-  "name": "___PACKAGE_NAME",
+  "name": "__PACKAGE_NAME",
   "version": "0.0.0",
-  "author": "___AUTHOR_NAME",
+  "author": "__AUTHOR_NAME",
   "license": "ISC",
   "files": [
     "lib"

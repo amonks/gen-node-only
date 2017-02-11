@@ -29,7 +29,7 @@ const main = async () => {
   const files = $.find('.')
   const replace = replacer(files)
   await replace(/__CURRENT_YEAR/, currentYear)
-  await replace(/__PROJECT_NAME/, name)
+  await replace(/__PACKAGE_NAME/, name)
   await replace(/__AUTHOR_NAME/, author)
 
   console.log('yarn')
