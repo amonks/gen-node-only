@@ -17,7 +17,7 @@ const main = async () => {
 
   console.log('write log')
   $.ShellString(JSON.stringify(config, undefined, 2))
-    .to(`__gen__.json`)
+    .to(`.gen.json`)
 
   console.log('remove git')
   await $.rm('-rf', '.git')
