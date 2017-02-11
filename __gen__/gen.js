@@ -5,10 +5,12 @@ const main = async () => {
   console.log('cwd')
   await $.cd(`${__dirname}/..`)
 
+  const withHub = !!$.which('hub')
+
   console.log('config')
   const origin = await getOrigin()
   const name = await ask('project npm name?')
-  const repo = await ask('project repo? (arg to `git create`)')
+  const repo = withHub ? await ask('project repo? (arg to `hub create`)') : {}
   const author = await ask('your name?', {default: 'Andrew J. Monks <a@monks.co>'})
   const currentYear = new Date().getFullYear()
   const config = {name, repo, author, origin, currentYear}
@@ -29,9 +31,8 @@ const main = async () => {
 
   console.log('make new git')
   await $.exec('git init')
-  await $.exec(`git create ${repo}`)
-  await $.exec('git add .')
-  await $.exec("rit commit -am 'Initial commit'")
+  $.which('hub') && await $.exec(`hub create ${repo}`)
+  await $.exec("git commit -am 'Initial commit'")
 
   console.log('💥')
 }
