@@ -1,0 +1,37 @@
+{
+  "name": "___PACKAGE_NAME",
+  "version": "0.0.0",
+  "author": "___AUTHOR_NAME",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard | snazzy",
+    "pretest": "yarn build",
+    "depcheck": "depcheck --specials babel --ignores standard,snazzy,depcheck,babel-eslint,babel-cli,ava",
+    "test": "yarn lint && yarn depcheck && ava --verbose",
+    "build": "babel src -d lib"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "depcheck": "^0.6.7",
+    "snazzy": "^6.0.0",
+    "standard": "^8.6.0"
+  },
+  "dependencies": {
+    "transform-runtime": "^0.0.0"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ]
+  }
+}
