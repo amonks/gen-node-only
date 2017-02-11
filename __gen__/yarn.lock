@@ -81,8 +81,8 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 gen-util@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/gen-util/-/gen-util-1.1.2.tgz#18a12614bf13165af6692708db1259c2233eae29"
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/gen-util/-/gen-util-1.1.3.tgz#9deef4ae7194c8d8fedb8aec18efef84580bf6e8"
   dependencies:
     babel-runtime "^6.22.0"
     inquirer "^3.0.1"
