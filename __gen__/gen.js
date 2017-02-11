@@ -40,6 +40,7 @@ const main = async () => {
   $.which('hub') && await $.exec(`hub create ${repo}`)
   await $.exec('git add .')
   await $.exec("git commit -am 'Initial commit'")
+  await $.exec('git push -u origin master')
 
   console.log('💥')
 }
