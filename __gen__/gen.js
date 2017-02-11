@@ -26,7 +26,7 @@ const main = async () => {
   await $.rm('-rf', '__gen__')
 
   console.log('do repalcements')
-  const files = $.find(__dirname)
+  const files = $.find('.')
   const replace = replacer(files)
   await replace(/__CURRENT_YEAR/, currentYear)
   await replace(/__PROJECT_NAME/, name)
