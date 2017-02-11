@@ -7,6 +7,7 @@
     "lib"
   ],
   "scripts": {
+    "gen": "__gen__/init.sh",
     "lint": "standard | snazzy",
     "pretest": "yarn build",
     "depcheck": "depcheck --specials babel --ignores standard,snazzy,depcheck,babel-eslint,babel-cli,ava",
