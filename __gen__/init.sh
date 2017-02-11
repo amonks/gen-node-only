@@ -4,7 +4,7 @@
 if [ $(basename `pwd`) != '__gen__' ]
 then
   cd __gen__
-  if [$(basename `pwd`) != '__gen__' ]
+  if [ $(basename `pwd`) != '__gen__' ]
   then
     exit 1
   fi
