@@ -32,6 +32,9 @@ const main = async () => {
   await replace(/__PROJECT_NAME/, name)
   await replace(/__AUTHOR_NAME/, author)
 
+  console.log('yarn')
+  await $.exec('yarn')
+
   console.log('make new git')
   await $.exec('git init')
   $.which('hub') && await $.exec(`hub create ${repo}`)
