@@ -1,4 +1,4 @@
-# ___PACKAGE_NAME
+# __PACKAGE_NAME
 
 clone this and run `yarn gen` to get started
 
